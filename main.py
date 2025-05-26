@@ -1,6 +1,5 @@
 import pdfplumber
 import os
-import time
 import logging
 from openai import OpenAI
 from dotenv import load_dotenv
