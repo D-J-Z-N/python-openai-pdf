@@ -20,7 +20,7 @@ def get_ai_client():
     )
 
 def extract_all_tables_from_pdf(file_path):
-    tables = camelot.read_pdf(file_path, pages="all", flavor="lattice")
+    tables = camelot.read_pdf(file_path, pages="all", flavor="stream")
     all_rows = []
     for table in tables:
         df = table.df
